@@ -10,8 +10,8 @@
         <property name="dialect">org.hibernate.dialect.PostgreSQL10Dialect</property>
         <property name="connection.driver_class">org.postgresql.Driver</property>
         <property name="connection.url">jdbc:postgresql://localhost:5434/db_salary</property>
-        <property name="hibernate.connection.username">dmissud</property>
-        <property name="hibernate.connection.password">daniel</property>
+        <property name="hibernate.connection.username">db_salary</property>
+        <property name="hibernate.connection.password">salary</property>
         <property name="hbm2ddl.auto">update</property>
         <property name="show_sql">true</property>
         <mapping class="org.dbs.business.Person" />
