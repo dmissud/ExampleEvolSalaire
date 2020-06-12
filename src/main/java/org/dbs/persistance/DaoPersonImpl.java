@@ -9,9 +9,10 @@ public class DaoPersonImpl implements IDaoPerson {
     @Override
     public void save(Person person) throws JPAException {
         Session session = DaoFactory.getSession();
-
         session.beginTransaction();
+
         session.save(person);
+
         session.getTransaction().commit();
         session.close();
     }

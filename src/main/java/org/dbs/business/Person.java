@@ -15,6 +15,10 @@ public class Person {
     @OneToMany(cascade = {CascadeType.ALL})
     protected Set<Role> roles;
 
+    @ManyToOne(cascade = {CascadeType.ALL})
+    PostalAdress postalAdress;
+
+    // Get and Set
     public Long getId() {
         return id;
     }
@@ -37,5 +41,13 @@ public class Person {
 
     public void setRoles(Set<Role> roles) {
         this.roles = roles;
+    }
+
+    public PostalAdress getPostalAdress() {
+        return postalAdress;
+    }
+
+    public void setPostalAdress(PostalAdress postalAdress) {
+        this.postalAdress = postalAdress;
     }
 }

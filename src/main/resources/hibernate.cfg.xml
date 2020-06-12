@@ -17,5 +17,6 @@
         <mapping class="org.dbs.business.Person" />
         <mapping class="org.dbs.business.Role" />
         <mapping class="org.dbs.business.Employee" />
+        <mapping class="org.dbs.business.PostalAdress" />
     </session-factory>
 </hibernate-configuration>

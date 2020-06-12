@@ -9,7 +9,7 @@ public class Role {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     protected Long id;
 
-    @ManyToOne
+    @ManyToOne(cascade = {CascadeType.ALL})
     protected Person person;
 
     protected String description;
